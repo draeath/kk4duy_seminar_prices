@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--
+    min = avg * 0.5
+    avg = 1000 * 10^(level)
+    max = avg * 1.5
+  -->
+  <replace sel="/wares/ware[@id='inv_seminar_management_0']/price/@average">1000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_0']/price/@max">1500</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_0']/price/@min">500</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_1']/price/@average">10000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_1']/price/@max">15000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_1']/price/@min">5000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_2']/price/@average">100000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_2']/price/@max">150000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_2']/price/@min">50000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_3']/price/@average">1000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_3']/price/@max">1500000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_3']/price/@min">500000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_4']/price/@average">10000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_4']/price/@max">15000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_management_4']/price/@min">5000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_0']/price/@average">1000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_0']/price/@max">1500</replace>  
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_0']/price/@min">500</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_1']/price/@average">10000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_1']/price/@max">15000</replace>  
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_1']/price/@min">5000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_2']/price/@average">100000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_2']/price/@max">150000</replace>  
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_2']/price/@min">50000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_3']/price/@average">1000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_3']/price/@max">1500000</replace>  
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_3']/price/@min">500000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_4']/price/@average">10000000</replace>
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_4']/price/@max">15000000</replace>  
+  <replace sel="/wares/ware[@id='inv_seminar_piloting_4']/price/@min">5000000</replace>
+  
+  <!--
+    Because seminars are now worth a ton more, we should disable the sale of them
+    by the player to traders, otherwise missions that reward them become overpowered.
+    
+    Note that this doesn't work if your faction exceeds a certain level - but I guess
+    it's better than nothing?
+  -->
+  <add sel="/wares/ware[@id='inv_seminar_management_0']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_management_1']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_management_2']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_management_3']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_management_4']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_piloting_0']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_piloting_1']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_piloting_2']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_piloting_3']"><restriction buy="1"/></add>
+  <add sel="/wares/ware[@id='inv_seminar_piloting_4']"><restriction buy="1"/></add>
+</diff>
